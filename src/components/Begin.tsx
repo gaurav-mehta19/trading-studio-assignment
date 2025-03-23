@@ -1,10 +1,12 @@
-import { useState } from "react";
+
 import { AppBar } from "./AppBar";
 import { useNavigate } from "react-router-dom";
+import { strategyNameAtom } from "../store/atoms/strategy_name";
+import { useRecoilState } from "recoil";
 
 export const Begin = () => {
     const navigate = useNavigate();
-    const [strategyName, setStrategyName] = useState<string>('');
+    const [strategyName, setStrategyName] = useRecoilState(strategyNameAtom);
     return (
         <div className="bg-gray-50 mb-10">
             <AppBar/>
