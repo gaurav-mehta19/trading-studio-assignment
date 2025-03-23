@@ -37,9 +37,9 @@ const NavBar = () => {
     }
 
     return <div className="hidden md:flex justify-center items-center space-x-8">
-        <a href="/contact" className="text-gray-600 hover:text-blue-600">Contact Us</a>
         <a href="/price" className="text-gray-600 hover:text-blue-600">Pricing</a>
         <a href="/questions" className="text-gray-600 hover:text-blue-600">FAQ</a>
+        <a href="/contact" className="text-gray-600 hover:text-blue-600">Contact Us</a>
         <button onClick={() => navigate('/')} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
             Logout
         </button>
