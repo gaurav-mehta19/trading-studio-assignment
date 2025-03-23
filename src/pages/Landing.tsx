@@ -112,7 +112,7 @@ export const Landing = () => {
             <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
               Join thousands of traders who are already using Trading Studio to optimize their investment strategies.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition flex items-center mx-auto">
+            <button onClick={()=> navigate('/strategy')} className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition flex items-center mx-auto">
               Create Your First Strategy <ChevronRight className="ml-2 h-5 w-5" />
             </button>
           </div>
