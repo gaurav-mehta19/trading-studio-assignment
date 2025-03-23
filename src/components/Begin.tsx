@@ -9,7 +9,7 @@ export const Begin = () => {
     const [strategyName, setStrategyName] = useRecoilState(strategyNameAtom);
     return (
         <div className="bg-gray-50 mb-10">
-            <AppBar/>
+            <AppBar />
             <div className="flex justify-center items-center mt-16">
                 <div className="bg-white min-w-4xl rounded-xl shadow-lg min-h-80 p-6">
                     <h3 className="text-2xl font-bold text-gray-900 mt-2 text-center">Create a Strategy</h3>
@@ -28,7 +28,17 @@ export const Begin = () => {
 
 
                     <div className="flex justify-center mt-10">
-                        <button onClick={() => navigate('/simulation-steps')} className="bg-blue-600 not-odd: text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button
+                            onClick={() => {
+                                if (strategyName.trim() !== "") {
+                                    navigate('/simulation-steps');
+                                }
+                            }}
+                            disabled={strategyName.trim() === ""}
+                            className={`px-4 py-2 rounded-lg transition ${strategyName.trim() !== ""
+                                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                                    : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                                }`}>
                             BEGIN
                         </button>
                     </div>
