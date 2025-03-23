@@ -16,7 +16,7 @@ export const Pricing = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <PricingCard title='Free' price='$0' duration='/month' forWhom='Perfect for getting started' f1='Basic analytics' f2='Up to 5 projects' f3='Community support' buttonText='Get Started' />
-                        <PricingCard title='Pro' price='$29' duration='/month' mostPopular forWhom='For growing businesses' f1='Advanced analytics' f2='Up to 20 projects' f3='Priority support' f4='Custom domains' buttonText='Start Free Trail' />
+                        <PricingCard title='Pro' price='$29' duration='/month' mostPopular forWhom='For growing businesses' f1='Advanced analytics' f2='Up to 20 projects' f3='Priority support' f4='Custom domains' buttonText='Start Free Trial' />
                         <PricingCard title='Business' price='$99' duration='/month' forWhom='For larger teams' f1='Enterprise analytics' f2='Unlimited projects' f3='24/7 phone support' f4='Custom integrations' f5='SLA guarantee' buttonText='Contact Sales' />
                         <PricingCard title='Enterprise' price='Custome' forWhom='For organizations' f1='Custom analytics' f2='Dedicated support team' f3='Custom contracts' f4='On-premise options' f5='Advanced security' buttonText='Talk to Sales' />
                     </div>
