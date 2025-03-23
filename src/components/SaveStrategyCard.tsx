@@ -62,10 +62,8 @@ export const SavedStrategyCard = ({ isSimulated = false }: SavedStrategyCardProp
                 {isExpanded && (
                     <div className="border-t border-gray-100">
                         <div className="flex">
-                            {/* Strategy Details Section */}
                             <div className="flex-1 p-6">
                                 <div className="grid grid-cols-2 gap-8">
-                                    {/* Scanner Rules */}
                                     <div>
                                         <h4 className="text-sm font-medium text-gray-900 flex items-center mb-2">
                                             <Search className="h-4 w-4 mr-1" />
@@ -88,7 +86,6 @@ export const SavedStrategyCard = ({ isSimulated = false }: SavedStrategyCardProp
                                         </ul>
                                     </div>
 
-                                    {/* Buy & Sell Rules */}
                                     <div className="space-y-4">
                                         <div>
                                             <h4 className="text-sm font-medium text-gray-900 flex items-center mb-2">
@@ -132,7 +129,6 @@ export const SavedStrategyCard = ({ isSimulated = false }: SavedStrategyCardProp
                                 </div>
                             </div>
 
-                            {/* Action Section */}
                             <div className="w-64 bg-gray-50 p-6 flex flex-col justify-between border-l border-gray-100">
                                 <div className="space-y-2">
                                     <h4 className="text-sm font-medium text-gray-900">Strategy Status</h4>

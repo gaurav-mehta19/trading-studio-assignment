@@ -47,7 +47,6 @@ export const SimulationResult = () => {
         <div className="bg-gray-50 min-h-screen">
             <AppBar />
 
-            {/* Header */}
             <header className="bg-gray-50 py-6">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-3xl font-bold text-gray-900">Simulation Results</h1>
@@ -56,10 +55,10 @@ export const SimulationResult = () => {
 
             <main className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
 
-                {/* Upper Section: Metric Cards & Equity Curve */}
+    
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
 
-                    {/* Metric Cards */}
+    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <MetricCard
                             title="Total Return"
@@ -87,7 +86,7 @@ export const SimulationResult = () => {
                         />
                     </div>
 
-                    {/* Equity Curve */}
+    
                     <div className="bg-white p-6 rounded-xl shadow-md">
                         <div className="flex items-center justify-between mb-4">
                             <h2 className="text-lg font-semibold">Equity Curve</h2>
@@ -99,7 +98,6 @@ export const SimulationResult = () => {
                     </div>
                 </div>
 
-                {/* Lower Section: Recent Trades */}
                 <div className="bg-white rounded-xl shadow-md overflow-hidden">
                     <div className="px-6 py-4">
                         <h2 className="text-lg font-semibold">Recent Trades</h2>
