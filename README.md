@@ -28,6 +28,9 @@ To run the project locally, follow these steps:
 
 After starting the application, you will land on the **Landing Page**. Click on the **Get Started** button to navigate to the **Strategy Creation Page**.
 
+## Data Handling
+- The data displayed in the **strategy page** and **simulation result page** is currently **hardcoded**.
+
 ### Creating a Strategy
 A strategy consists of four steps:
 
@@ -45,9 +48,6 @@ A strategy consists of four steps:
 
 ## State Management
 - The application uses **Recoil** to store the state of these four steps.
-
-## Data Handling
-- The data displayed in the **saveStrategyCard** and **simulation result** pages is currently **hardcoded**.
 
 ## Technologies Used
 - React
