@@ -13,7 +13,7 @@ To run the project locally, follow these steps:
    ```
 2. **Move to the project folder**
    ```sh
-   cd trading-studio-assignment
+    cd <repository-folder>
    ```
 3. **Install dependencies**
    ```sh
