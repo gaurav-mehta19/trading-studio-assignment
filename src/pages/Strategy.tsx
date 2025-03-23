@@ -7,7 +7,7 @@ export const Strategy = () => {
         <div className="bg-gray-50 min-h-screen pb-20">
             <Begin/>
             <SavedStrategyCard/>
-            <SavedStrategyCard isSimulated/>
+            <SavedStrategyCard isSimulated/>          
         </div>
     )
 }

@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Trading Studio Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Link
+- This project is live at: [https://trading-studio-assignment.vercel.app](https://trading-studio-assignment.vercel.app)
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the project locally, follow these steps:
 
-## Expanding the ESLint configuration
+1. **Clone the project**
+   ```sh
+   git clone <repository-url>
+   ```
+2. **Move to the project folder**
+   ```sh
+   cd trading-studio-assignment
+   ```
+3. **Install dependencies**
+   ```sh
+   npm install
+   ```
+4. **Start the development server**
+   ```sh
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Usage Guide
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+After starting the application, you will land on the **Landing Page**. Click on the **Get Started** button to navigate to the **Strategy Creation Page**.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Creating a Strategy
+A strategy consists of four steps:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Scanner Step**  
+   - Identifies financial instruments that meet a set of scanner rules on a given day.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. **Buy Step**  
+   - Identifies financial instruments that satisfy a set of buy-trigger rules on a given day.
+
+3. **Sell Step**  
+   - Identifies financial instruments that meet sell-trigger rules after being shortlisted in the buy step.
+
+4. **Simulation Step**  
+   - Simulates the portfolio using a given configuration, based on shortlisted items from the above steps.
+
+## State Management
+- The application uses **Recoil** to store the state of these four steps.
+
+## Data Handling
+- The data displayed in the **saveStrategyCard** and **simulation result** pages is currently **hardcoded**.
+
+## Technologies Used
+- React
+- Recoil (State Management)
+- Node.js (for package management via npm)
+
